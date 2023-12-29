@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import random
 
-token = 'MTE5MDMwMjMyMDQ3NTUxMjg4Mg.GupcC9.GN_7jP6LrPQcyZmkSEFESPouUvNXAhW0oFybog'
+token = ''
 
 bot = commands.Bot(command_prefix='.gift', intents=discord.Intents.all())
 
