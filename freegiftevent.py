@@ -4,7 +4,7 @@ import random
 
 token = ''
 
-bot = commands.Bot(command_prefix='.gift', intents=discord.Intents.all())
+bot = commands.Bot(command_prefix='.gift ', intents=discord.Intents.all())
 
 # 대기열을 저장할 딕셔너리
 gift_queues = {}
