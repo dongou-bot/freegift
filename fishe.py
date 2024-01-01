@@ -2,15 +2,15 @@ import discord
 import random
 from discord.ext import commands
 
-# ë´ ì¤ì 
+# 봇 설정
 bot = commands.Bot(command_prefix='!')
 
-# ëì ëªë ¹ì´ êµ¬í
-@bot.command(name='ëì')
+# 낚시 명령어 구현
+@bot.command(name='낚시')
 async def fishing(ctx):
-    fishes = ['ê³ ë', 'ìì´', 'ê°ë³µì¹', 'ì°¸ì¹', 'ë¬¸ì´', 'ì¤ì§ì´', 'ëì§', 'ê²', 'ëªí']
+    fishes = ['고래', '상어', '개복치', '참치', '문어', '오징어', '낙지', '게', '명태']
     selected_fish = random.choice(fishes)
-    await ctx.send(f'{ctx.author.mention}, ëì ë¬¼ê³ ê¸°: {selected_fish}')
+    await ctx.send(f'{ctx.author.mention}, 낚은 물고기: {selected_fish}')
 
-# ë´ ì¤í
+# 봇 실행
 bot.run('YOUR_BOT_TOKEN')
