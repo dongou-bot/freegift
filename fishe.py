@@ -2,6 +2,7 @@ import discord
 import random
 from discord.ext import commands
 
+token = ''
 # 봇 설정
 bot = commands.Bot(command_prefix='!')
 
@@ -13,4 +14,4 @@ async def fishing(ctx):
     await ctx.send(f'{ctx.author.mention}, 낚은 물고기: {selected_fish}')
 
 # 봇 실행
-bot.run('YOUR_BOT_TOKEN')
+bot.run(token)
